@@ -1,0 +1,33 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	position: relative;
+	background: #0a0a0a;
+	align-items: center;
+	justify-content: center;
+}
+
+$speed: 0.5s;
+
+.botao{
+    background: #e90808;
+    transform-style: preserve-3d;
+}	
+.botao: after{
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background: #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: 'CLARO';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+.botao: hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}
