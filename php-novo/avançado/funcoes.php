@@ -28,3 +28,26 @@ function exibeMensagem(string $mensagem)
 {
     echo $mensagem . PHP_EOL;
 }
+
+
+
+
+for ($i = 0; $i < 1; $i++){
+    for ($j = 0; $j < $n; $j++){
+        [$i]=[$j];
+        echo $array[$i][$j] .PHP_EOL;    
+    }
+}
+for ($i = 0; $i < 1; $i++){
+    for ($j = 0; $j < $n; $j++){
+        [$i]+[$j] = $n + 1;
+        echo $array[$i][$j] .PHP_EOL;
+    }
+}
+
+for ($i = 0; $i < $m; $i++){
+    for ($j = 0; $j < $n; $j++){
+       echo $array[$i][$j];
+    }
+    echo PHP_EOL;
+};
