@@ -1,13 +1,12 @@
 <?php
 $array = [];
 $matriz = [];
+$manv=[]; 
 
-echo "Digite o tamanho da coluna da Matriz 1: ";
+echo "Digite a quantidade de linhas da Matriz 1: ";
 $m = (int)fgets(STDIN);
-echo "Digite o tamanho de linhas da Matriz 1: ";
+echo "Digite a quantidade de colunas da Matriz 1: ";
 $n = (int)fgets(STDIN);
-echo "Digite o tamanho da coluna da Matriz 2: ";
-$o = (int)fgets(STDIN);
 
 echo "Digite a Matriz 1:".PHP_EOL;
 for ($i = 0; $i < $m; $i++){
@@ -15,31 +14,37 @@ for ($i = 0; $i < $m; $i++){
        $array[$i][$j] = (int)fgets(STDIN);
        }
 }
+
 for ($i = 0; $i < $m; $i++){
     for ($j = 0; $j < $n; $j++){
         echo $array[$i][$j]; 
     }
     echo PHP_EOL;
 }
+echo "Digite a quantidade de colunas da Matriz 2: ";
+$o = (int)fgets(STDIN);
 
 echo "Digite a Matriz 2:".PHP_EOL;
-for ($i = 0; $i < $o; $i++){
-    for ($j = 0; $j < $m; $j++){
+for ($i = 0; $i < $n; $i++){
+    for ($j = 0; $j < $o; $j++){
        $matriz[$i][$j] = (int)fgets(STDIN);
+       $b == $matriz[$i];
        }
 }
-for ($i = 0; $i < $o; $i++){
-    for ($j = 0; $j < $m; $j++){
+
+for ($i = 0; $i < $n; $i++){
+    for ($j = 0; $j < $o; $j++){
         echo $matriz[$i][$j];
     }
     echo PHP_EOL;
 }
 
-$manv=[]; 
-    for ($i = 0; $i < $array[$i]; $i++){
-        for ($j = 0; $j < $matriz[$j]; $j++){
-            if()
+
+for ($i = 0; $i < $m; $i++){
+      for ($j = 0; $j < $o; $j++){
+          if($i*$j == $manv){
             echo $manv[$i][$j];
+          }
         }
         echo PHP_EOL;
     }
