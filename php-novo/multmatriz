@@ -16,7 +16,7 @@ for ($i = 0; $i < $n; $i++){
 }
 for ($i = 0; $i < $n; $i++){
     for ($j = 0; $j < $m; $j++){
-        echo $array[$i][$j]; 
+        echo " ",$array[$i][$j]; 
     }
     echo PHP_EOL;
 }
@@ -30,26 +30,26 @@ for ($i = 0; $i < $m; $i++){
 }
 for ($i = 0; $i < $m; $i++){
     for ($j = 0; $j < $o; $j++){
-        echo $matriz[$i][$j];
+        echo " ",$matriz[$i][$j];
     }
     echo PHP_EOL;
 }
 $manv = [];
 echo "Matrizes multiplicadas :".PHP_EOL;
-
+$a = 0;
 for($i = 0; $i < $n; $i++) {
     for($j = 0; $j < $o; $j++) {
         for($x = 0; $x < $n; $x++) {
-            $aux += $array[$i][$x] * $matriz[$x][$j];
+            $a += $array[$i][$x] * $matriz[$x][$j];
         }
-        $manv[$i][$j] = $aux;
-        $aux = 0;
+        $manv[$i][$j] = $a;
+        $a = 0;
     }
 }
 
 for($i = 0; $i < $n; $i++) {
     for($j = 0; $j < $o; $j++) {
-        echo $manv[$i][$j];
+        echo " ",$manv[$i][$j];
     }
     echo  PHP_EOL;
 }
